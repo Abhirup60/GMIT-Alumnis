@@ -105,7 +105,7 @@ const EditUser = () => {
   
     try {
       const response = await axios.put(
-        `https://reuniv-backend.onrender.com/api/auth/admin/user-update/${userId}`,
+        `http://localhost:3000/api/auth/admin/user-update/${userId}`,
         updateData,
         {
           headers: {

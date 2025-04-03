@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
   // to get all the admin details
   const getAlltheAdminUser = async()=>{
     try {
-      const response = await fetch("https://reuniv-backend.onrender.com/api/auth/admin/users",{
+      const response = await fetch("http://localhost:3000/api/auth/admin/users",{
         method:"GET",
       })
       // console.log(response);
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
   // to get all the alumni(student) details
   const getAlltheAlumni = async()=>{
     try {
-      const response = await fetch("https://reuniv-backend.onrender.com/auth/alumni-users",{
+      const response = await fetch("http://localhost:3000/auth/alumni-users",{
         method:"GET",
       })
       console.log("from alumni student:",response);

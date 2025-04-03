@@ -15,7 +15,7 @@ const JobBoard = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("https://reuniv-backend.onrender.com/job/jobform");
+        const response = await fetch("http://localhost:3000/job/jobform");
         if (response.ok) {
           const data = await response.json();
           setPostedJobs(data);
