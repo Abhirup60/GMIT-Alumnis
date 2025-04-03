@@ -13,7 +13,7 @@ const app = express();
 
 // CORS configuration
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://alumnisphere.onrender.com/",
   methods: "GET, PUT, POST, PATCH, HEAD, DELETE",
   credentials: true,
 };
