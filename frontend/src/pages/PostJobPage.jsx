@@ -68,7 +68,7 @@ const PostJobPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/job/jobform", {
+      const response = await fetch("https://reuniv-backend.onrender.com/job/jobform", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

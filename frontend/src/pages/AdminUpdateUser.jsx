@@ -28,7 +28,7 @@ const EditUser = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/auth/admin/get-user/${userId}`);
+        const response = await axios.get(`https://reuniv-backend.onrender.com/api/auth/admin/get-user/${userId}`);
         // console.log(response.data.userFromURL);
         setDetails(response.data.userFromURL);
       } catch (error) {
@@ -105,7 +105,7 @@ const EditUser = () => {
   
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/auth/admin/user-update/${userId}`,
+        `https://reuniv-backend.onrender.com/api/auth/admin/user-update/${userId}`,
         updateData,
         {
           headers: {
