@@ -94,7 +94,7 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
 
     return res.status(200).json({
       message: "File uploaded successfully",
-      fileUrl: `http://localhost:5000/upload-files/file/${filePath}`,
+      fileUrl: `https://alumnisphere.onrender.com/upload-files/file/${filePath}`,
       data: createPdfDetails,
     });
   } catch (error) {
