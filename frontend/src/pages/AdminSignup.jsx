@@ -27,7 +27,7 @@ const AdminSignup = () => {
     e.preventDefault();
     console.log(details);
     try {
-      const response = await fetch("http://localhost:3000/api/auth/admin/register", {
+      const response = await fetch("https://gmit-alumnis-backend.onrender.com/api/auth/admin/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
