@@ -73,7 +73,7 @@ const Alumni = () => {
   const deleteUserbyid = async (id) => {
     try {
       console.log(id);
-      const response = await fetch(`http://localhost:3000/api/auth/admin/delete-adminUser/${id}`, {
+      const response = await fetch(`https://gmit-alumnis-backend.onrender.com/api/auth/admin/delete-adminUser/${id}`, {
         method: "DELETE",
         // headers: {
         //   Authorization: authToken,
