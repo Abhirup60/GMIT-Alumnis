@@ -13,7 +13,7 @@ const app = express();
 
 // CORS configuration
 const corsOption = {
-  origin: "https://gmit-alumnis-backend.onrender.com",
+  origin: "https://gmit-alumni-connect.onrender.com/",
   methods: "GET, PUT, POST, PATCH, HEAD, DELETE",
   credentials: true,
 };
@@ -94,7 +94,7 @@ app.post("/upload-files", upload.single("file"), async (req, res) => {
 
     return res.status(200).json({
       message: "File uploaded successfully",
-      fileUrl: `https://gmit-alumnis-backend.onrender.com/upload-files/file/${filePath}`,
+      fileUrl: `https://gmit-alumni-connect.onrender.com/upload-files/file/${filePath}`,
       data: createPdfDetails,
     });
   } catch (error) {
