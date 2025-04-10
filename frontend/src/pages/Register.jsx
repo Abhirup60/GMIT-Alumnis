@@ -56,7 +56,7 @@ const Register = () => {
     formData.append("file", file);
 
     try {
-      const response = await axios.post("http://localhost:3000/upload-files", formData, {
+      const response = await axios.post("https://gmit-alumnis-backend.onrender.com/upload-files", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
