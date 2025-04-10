@@ -43,7 +43,7 @@ const AdminUsers = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/api/auth/admin/approve-user/${userId}`, {
+      const response = await fetch(`https://gmit-alumnis-backend.onrender.com/api/auth/admin/approve-user/${userId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const AdminUsers = () => {
 
     try {
       console.log(id);
-      const response = await fetch(`http://localhost:3000/api/auth/admin/delete-user/${id}`, {
+      const response = await fetch(`https://gmit-alumnis-backend.onrender.com/api/auth/admin/delete-user/${id}`, {
         method: "DELETE",
       });
       console.log("FROM HANDLE REJECTION", response);
@@ -98,7 +98,7 @@ const AdminUsers = () => {
     }
     try {
       console.log(id);
-      const response = await fetch(`http://localhost:3000/api/auth/admin/delete-user/${id}`, {
+      const response = await fetch(`https://gmit-alumnis-backend.onrender.com/api/auth/admin/delete-user/${id}`, {
         method: "DELETE",
       });
 
@@ -189,7 +189,7 @@ const AdminUsers = () => {
                     <td className='py-4 px-4 text-center'>{user.graduationYear}</td>
                     <td className='py-4 px-4 text-center'>
                       <a
-                        href={`http://localhost:3000/files/${user.file}`}
+                        href={`https://gmit-alumnis-backend.onrender.com/files/${user.file}`}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='text-[#1a2a5e] hover:text-[#f36f21] hover:underline transition'
