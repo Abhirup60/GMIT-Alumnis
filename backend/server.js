@@ -13,7 +13,7 @@ const app = express();
 
 // CORS configuration
 const corsOption = {
-  origin: "https://gmit-alumni-connect.onrender.com/",
+  origin: "https://gmit-alumni-connect.onrender.com",
   methods: "GET, PUT, POST, PATCH, HEAD, DELETE",
   credentials: true,
 };
