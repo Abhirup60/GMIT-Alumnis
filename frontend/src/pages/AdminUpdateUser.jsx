@@ -68,7 +68,7 @@ const EditUser = () => {
   //   }
 
   //   try {
-  //     const response = await axios.put(`http://localhost:3000/api/auth/admin/user-update/${userId}`, 
+  //     const response = await axios.put(`https://gmit-alumnis-backend.onrender.com/api/auth/admin/user-update/${userId}`, 
   //       formData, {
   //       headers: {
   //         "Content-Type": "multipart/form-data",
@@ -105,7 +105,7 @@ const EditUser = () => {
   
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/auth/admin/user-update/${userId}`,
+        `https://gmit-alumnis-backend.onrender.com/api/auth/admin/user-update/${userId}`,
         updateData,
         {
           headers: {
